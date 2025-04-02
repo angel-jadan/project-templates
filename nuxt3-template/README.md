@@ -25,7 +25,7 @@ Template for creating Single Page Applications with Nuxt 3.
 To create a new project using this template:
 
 ```bash
-npx nuxi init my-project --template https://github.com/angle-jadan/project-templates.git#nuxt3-template
+npx nuxi init my-project --template https://github.com/angel-jadan/project-templates.git#nuxt3-template
 ```
 
 ## Project Structure
