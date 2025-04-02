@@ -1,77 +1,129 @@
 # Nuxt 3 SPA Template
 
-Base template for a Single Page Application (SPA) built with Nuxt 3, TypeScript, Tailwind CSS and ESLint.
+Template for creating Single Page Applications with Nuxt 3.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Features
 
-## Setup
+- Configured as SPA (Single Page Application)
+- TypeScript
+- Tailwind CSS
+- ESLint + Prettier
+- Organized directory structure
+- Default layout
+- SPA navigation
+- Auto-formatting on save
+- TypeScript support
+- Tailwind CSS integration
 
-Make sure to install dependencies:
+## Prerequisites
+
+- Node.js 16.x or later
+- npm 7.x or later
+
+## Usage
+
+To create a new project using this template:
 
 ```bash
-# npm
+npx nuxi init my-project --template https://github.com/angle-jadan/project-templates.git#nuxt3-template
+```
+
+## Project Structure
+
+```
+src/
+├── app.vue              # Root component
+├── components/          # Reusable components
+├── pages/              # Application pages
+├── layouts/            # Application layouts
+├── assets/            # Static resources
+├── composables/       # Vue composables
+└── utils/            # Utilities
+```
+
+## Configuration Files
+
+```
+├── nuxt.config.ts      # Nuxt configuration
+├── tsconfig.json       # TypeScript configuration
+├── .eslintrc          # ESLint configuration
+├── .prettierrc        # Prettier configuration
+├── .prettierignore    # Prettier ignore rules
+├── tailwind.config.ts # Tailwind CSS configuration
+├── .vscode/           # VS Code settings
+│   └── settings.json  # Editor configuration
+└── package.json       # Project dependencies and scripts
+```
+
+## VS Code Settings
+
+The template includes `.vscode/settings.json` with the following configurations:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+```
+
+## Installation
+
+```bash
+cd my-project
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Build
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+## Preview
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Check for linting errors
+- `npm run lint:fix` - Fix linting errors
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+
+## VS Code Integration
+
+This template includes VS Code settings for:
+- Auto-formatting on save
+- ESLint integration
+- Prettier integration
+- TypeScript support
+
+## License
+
+MIT
