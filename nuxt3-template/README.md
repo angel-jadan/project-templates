@@ -1,4 +1,6 @@
-# Nuxt Minimal Starter
+# Nuxt 3 SPA Template
+
+Base template for a Single Page Application (SPA) built with Nuxt 3, TypeScript, Tailwind CSS and ESLint.
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
